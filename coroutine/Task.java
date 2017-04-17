@@ -1,4 +1,5 @@
-package com.saintsrobotics.corebot.coroutine;
+package com.saintsrobotics.framework.coroutine;
+
 
 import com.zoominfo.util.yieldreturn.Generator;
 

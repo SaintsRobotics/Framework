@@ -1,4 +1,4 @@
-package com.saintsrobotics.corebot.coroutine;
+package com.saintsrobotics.framework.coroutine;
 
 public abstract class RunEachFrameTask extends Task {
     

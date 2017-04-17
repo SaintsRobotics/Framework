@@ -1,4 +1,4 @@
-package com.saintsrobotics.corebot;
+package com.saintsrobotics.framework;
 
 public class Flags {
 	

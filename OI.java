@@ -1,4 +1,4 @@
-package com.saintsrobotics.corebot;
+package com.saintsrobotics.framework;
 
 import edu.wpi.first.wpilibj.Joystick;
 

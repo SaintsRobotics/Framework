@@ -1,4 +1,4 @@
-package com.saintsrobotics.corebot.input.sensors;
+package com.saintsrobotics.framework.input.sensors;
 
 import edu.wpi.first.wpilibj.AnalogPotentiometer;
 

@@ -1,13 +1,16 @@
-package com.saintsrobotics.corebot.tasks;
+package com.saintsrobotics.framework.util;
 
 
-import com.saintsrobotics.corebot.Robot;
-import com.saintsrobotics.corebot.coroutine.RunEachFrameTask;
+import com.saintsrobotics.framework.coroutine.RunEachFrameTask;
+import com.saintsrobotics.framework.output.Motors;
 
 public class UpdateMotors extends RunEachFrameTask {
-
+	private Motors motors;
+	public UpdateMotors(Motors motors){
+		this.motors = motors;
+	}
 	@Override
 	protected void runEachFrame() {
-		Robot.motors.update();
+		motors.update();
 	}
 }

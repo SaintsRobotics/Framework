@@ -1,4 +1,4 @@
-package com.saintsrobotics.corebot.output;
+package com.saintsrobotics.framework.output;
 
 import edu.wpi.first.wpilibj.Servo;
 
@@ -7,23 +7,7 @@ import java.util.List;
 
 public abstract class Servos {
     
-    public abstract int getRightShifterOut();
-    public abstract int getRightShifterIn();
-    
-    public abstract int getLeftShifterOut();
-    public abstract int getLeftShifterIn();
-
     private List<ServoWrapper> servos = new ArrayList<>();
-
-    public ServoWrapper rightShifter;
-    public ServoWrapper leftShifter;
-
-    public Servos(int rightShifterPin, int leftShifterPin) {
-        rightShifter = new ServoWrapper(rightShifterPin);
-        leftShifter = new ServoWrapper(leftShifterPin);
-        servos.add(rightShifter);
-        servos.add(leftShifter);
-    }
 
     public void init() {
         servos.forEach(ServoWrapper::init);

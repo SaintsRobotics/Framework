@@ -1,6 +1,5 @@
-package com.saintsrobotics.corebot.util;
+package com.saintsrobotics.framework.util;
 
-import com.saintsrobotics.corebot.Robot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class PID {
@@ -17,11 +16,11 @@ public class PID {
     private double outMin = -1;
     private double outMax = 1;
 
-    public PID(double kp, double ki, double kd) {
+    public PID(double kp, double ki, double kd, double maxSum) {
         this.kp = kp;
         this.ki = ki;
         this.kd = kd;
-        maxSum = Robot.prefs.getDouble("geardrop_maxsum", 0);
+        this.maxSum = maxSum;
     }
     
     public double compute(double input, double setpoint) {
